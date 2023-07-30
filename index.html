@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn1">Click Me</button>
+    <button id="btn2">Click Me</button>
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Name">
+   
+    <script>
+        // console.log("Hello")
+        // let name = "Sumit"
+        //  console.log("Hello "+name)
+        //  name = "Manoj"
+        //  console.log("Hello "+name)
+        //  const PI = 3.14
+
+        //  var age = 25;
+
+        //  console.log(age)
+        //  let name1 = "Sumit"
+
+        //  sayHello()
+        //  function sayHello(){
+        //     console.log(age)
+        //     name1 = "Sumit1"
+        //  }
+
+        //  console.log(name1)
+
+        //  //hoisting
+
+        //  console.log("AGE ",age1)
+        //  var age1=26
+
+
+        //Data Type
+
+        //Number
+
+        let score=75.5;
+        let age = 26
+
+        console.log(typeof age)
+
+        //string
+
+        let msg1 = "Sumit"
+        let msg2 = 'Sumit'
+        let msg3 = `Sumit`// string literals
+
+        //bool
+
+
+        let isRainy = false
+
+        if (isRainy){
+            console.log(`Rainy is outside`)
+        }else{
+            console.log(`Not Rainy`,typeof isRainy)
+        }
+
+
+        //null
+
+        let NullVaue = null //empty
+
+
+        var data = undefined
+        //undefined
+
+        console.log(data)
+
+        //prompts
+
+        // alert(3+1)
+
+
+        // let name1 = prompt("What is your name?")
+        // console.log(name1)
+
+        //confirm
+
+        // let closeBrowser = confirm("Are you want to close this browser?")
+
+        // if (closeBrowser){
+        //     window.close()
+        // }
+
+        //DOM Manupilation
+
+        const para = document.createElement('p')
+      
+        para.textContent = 'Hello World'
+        console.log(para)
+
+        document.body.append(para)
+
+        para.style.color='red';
+        para.style.fontSize = '20px'
+
+
+        document.querySelector('#btn1').addEventListener('click',()=>{
+            alert("Hi")
+        })
+        
+        document.querySelector('#btn2').addEventListener('click',()=>{
+            alert("Hello")
+        })
+
+       
+
+
+
+        function Sum(a,b){
+            console.log(a+b)
+        }
+        function sayHi(a,b,callback){
+            callback(a,b)
+        }
+        //callback
+
+        sayHi(1,5,Sum)
+
+
+        
+
+  
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>
